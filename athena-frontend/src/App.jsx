@@ -4,6 +4,26 @@ export default function App() {
   const [step, setStep] = useState("setup");
   const [name, setName] = useState("");
   const [urn, setUrn] = useState("");
+  const [cameraAllowed, setCameraAllowed] = useState(false);
+  const [micAllowed, setMicAllowed] = useState(false);
+
+  const requestCamera = async () => {
+    try {
+      const s = await navigator.mediaDevices.getUserMedia({ video: true });
+      setCameraAllowed(true);
+    } catch (e) {
+      alert("Camera access denied");
+    }
+  };
+
+  const requestMic = async () => {
+    try {
+      const s = await navigator.mediaDevices.getUserMedia({ audio: true });
+      setMicAllowed(true);
+    } catch (e) {
+      alert("Microphone access denied");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6 text-slate-800">
