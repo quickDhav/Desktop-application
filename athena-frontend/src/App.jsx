@@ -1,4 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
+const DEFAULT_QUESTIONS = [
+  {
+    id: 1,
+    question: "Which Electron process is responsible for creating BrowserWindow?",
+    options: ["Renderer Process", "Main Process", "React Process", "Preload Process"],
+    correctAnswer: 1,
+  },
+  {
+    id: 2,
+    question: "Which Electron API is commonly used in the renderer to invoke a handler in the main process?",
+    options: ["ipcRenderer.invoke", "BrowserWindow.loadURL", "fs.writeFileSync", "dialog.showMessageBox"],
+    correctAnswer: 0,
+  },
+  {
+    id: 3,
+    question: "Why is a preload script commonly used in Electron?",
+    options: [
+      "To style the React application",
+      "To expose controlled APIs safely to the renderer",
+      "To create the Express server",
+      "To replace the main process",
+    ],
+    correctAnswer: 1,
+  },
+];
 
 export default function App() {
   const [step, setStep] = useState("setup");
