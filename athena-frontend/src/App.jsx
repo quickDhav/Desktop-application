@@ -32,6 +32,21 @@ export default function App() {
   const [urn, setUrn] = useState("");
   const [cameraAllowed, setCameraAllowed] = useState(false);
   const [micAllowed, setMicAllowed] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(15 * 60);
+
+  useEffect(() => {
+    if (step !== "exam") return;
+    const t = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          clearInterval(t);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(t);
+  }, [step]);
 
   const requestCamera = async () => {
     try {
