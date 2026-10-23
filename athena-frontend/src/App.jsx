@@ -33,6 +33,17 @@ export default function App() {
   const [cameraAllowed, setCameraAllowed] = useState(false);
   const [micAllowed, setMicAllowed] = useState(false);
   const [timeLeft, setTimeLeft] = useState(15 * 60);
+  const [score, setScore] = useState(0);
+
+  const finishExam = async () => {
+    let confirmed = true;
+    if (window.electronAPI?.confirmSubmit) {
+      confirmed = await window.electronAPI.confirmSubmit();
+    }
+    if (confirmed) {
+      setStep("result");
+    }
+  };
 
   useEffect(() => {
     if (step !== "exam") return;

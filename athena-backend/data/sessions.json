@@ -1,0 +1,88 @@
+[
+  {
+    "sessionId": "session-1792931659538",
+    "userId": "E25B070892",
+    "name": "Dhavika Bika",
+    "startedAt": "2026-10-25T12:34:19.538Z",
+    "submittedAt": "2026-10-25T12:34:37.135Z",
+    "status": "submitted",
+    "attempted": 1,
+    "correct": 0,
+    "wrong": 1,
+    "answers": [
+      {
+        "questionId": 1,
+        "selectedAnswer": 0,
+        "isCorrect": false,
+        "answeredAt": "2026-10-25T12:34:22.906Z"
+      }
+    ]
+  },
+  {
+    "sessionId": "session-1792932298538",
+    "userId": "E25B070892",
+    "name": "Dhavika Bika",
+    "startedAt": "2026-10-25T12:44:58.538Z",
+    "submittedAt": null,
+    "status": "in-progress",
+    "attempted": 0,
+    "correct": 0,
+    "wrong": 0,
+    "answers": []
+  },
+  {
+    "sessionId": "session-1792932672524",
+    "userId": "E25B070892",
+    "name": "Dhavika Bika",
+    "startedAt": "2026-10-25T12:51:12.524Z",
+    "submittedAt": null,
+    "status": "in-progress",
+    "attempted": 5,
+    "correct": 5,
+    "wrong": 0,
+    "answers": [
+      {
+        "questionId": 1,
+        "selectedAnswer": 1,
+        "isCorrect": true,
+        "answeredAt": "2026-10-25T12:51:15.707Z"
+      },
+      {
+        "questionId": 2,
+        "selectedAnswer": 0,
+        "isCorrect": true,
+        "answeredAt": "2026-10-25T12:51:17.189Z"
+      },
+      {
+        "questionId": 3,
+        "selectedAnswer": 1,
+        "isCorrect": true,
+        "answeredAt": "2026-10-25T12:51:18.723Z"
+      },
+      {
+        "questionId": 5,
+        "selectedAnswer": 1,
+        "isCorrect": true,
+        "answeredAt": "2026-10-25T12:51:21.589Z"
+      },
+      {
+        "questionId": 4,
+        "selectedAnswer": 0,
+        "isCorrect": true,
+        "answeredAt": "2026-10-25T12:51:23.423Z"
+      }
+    ]
+  },
+  {
+    "sessionId": "session-1792932697281",
+    "userId": "E25B070892",
+    "name": "Dhavika Bika",
+    "startedAt": "2026-10-25T12:51:37.281Z",
+    "submittedAt": null,
+    "status": "in-progress",
+    "attempted": 0,
+    "correct": 0,
+    "wrong": 0,
+    "answers": []
+  }
+]
